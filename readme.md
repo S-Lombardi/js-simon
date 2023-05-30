@@ -21,8 +21,11 @@ PROBLEMA: Far scomparire i numeri dopo 30 sec e far apparire 5 prompt uno dopo l
 PROBLEMA: il software dice quanti e quali dei numeri da indovinare sono stati individuati:
 
 1-Recuperare tutti i numeri che ha inserito l'utente in un array
-2-Confrontare i numeri dell utente con i numri generici 
+2-Confrontare i numeri dell utente con i numeri generici 
    2.1 SE l'array randomico include i numeri utente allora restituisci quel numero
    2.2 ALTRIMENTI continua in controllo
+
+3-inserisco i numeri indovinati in un array vuoto
+-Stampo risultato a video
 
 
