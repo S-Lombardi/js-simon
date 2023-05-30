@@ -15,13 +15,13 @@ PROBLEMA: Visualizzare in pagina 5 numeri casuali:
 PROBLEMA: Far scomparire i numeri dopo 30 sec e far apparire 5 prompt uno dopo l'altro per fare inserire all'utente i 5 numeri random:
 
 1-Utilizzare funzione setTimeout 
-2-Dentro la funzione precedentemente nominata dare una classe display:none all'array dei 5 numeri e impostare il timer di 30 sec. (30 x 1000)
+2-Dentro la funzione precedentemente nominata dare una classe display:none all'array dei 5 numeri e impostare il timer di 30 sec. (30 x 1000) - oppure con innerHTML = " ".
 3-inserire un ciclo per far apparire 5 volte il prompt per l'inserimento dei numeri da parte dell'utente. Usare parseInt.
 
 PROBLEMA: il software dice quanti e quali dei numeri da indovinare sono stati individuati:
 
-1-Recuperare tutti i numeri che ha inserito l'utente
-2-Confrontare i numeri utente con i numeri randomici dell'array 
+1-Recuperare tutti i numeri che ha inserito l'utente in un array
+2-Confrontare i numeri dell utente con i numri generici 
    2.1 SE l'array randomico include i numeri utente allora restituisci quel numero
    2.2 ALTRIMENTI continua in controllo
 
