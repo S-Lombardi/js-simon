@@ -12,6 +12,7 @@ let array_random = [];
 
 //chiamo la funzione e inserisco la classe hide nel div dei numeri random
 function hideNumber (){
+    let element_numbers = document.getElementById("pc-number")
     element_numbers.classList.add("hide")  
 }
 
@@ -33,8 +34,6 @@ for(let i=0 ; i<5 ; i++) {
     array_random.push(number);
 
 }
-
-
 
 //stampo i numeri random a video
 let element_numbers = document.getElementById("pc-number")
