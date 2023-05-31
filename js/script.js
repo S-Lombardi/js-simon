@@ -46,9 +46,15 @@ setTimeout(function(){
 
         let user_number = parseInt(prompt("Inserisci uno alla volta i numeri precedentemente visualizzati"));
 
-        // while(isNaN(user_number)) {
-        //     alert("non hai inserito un numero");
-        // }
+        while(isNaN(user_number)) {
+            alert("non hai inserito un numero");
+            user_number = parseInt(prompt("Inserisci uno alla volta i numeri precedentemente visualizzati"));
+        }
+
+        while(array_user.includes(user_number)) {
+            alert("devi inserire tutti numeri diversi");
+            user_number = parseInt(prompt("Inserisci uno alla volta i numeri precedentemente visualizzati"));
+        }
 
         //inserisco i numeri utente in un array
         array_user.push(user_number);
@@ -72,6 +78,6 @@ setTimeout(function(){
     let tag_result = document.getElementById("result");
     tag_result.innerHTML += `hai indovinato ${matching_numbers.length} numeri: ${matching_numbers}`;
     
-},3900);
+},3500);
 
 
