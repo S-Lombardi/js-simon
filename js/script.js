@@ -1,7 +1,7 @@
 "use strict"
 //DICHIARO FUNZIONE PER GENERARE NUMERI CASUALI
-function generateRandomNumber(max){
-    return Math.floor(Math.random() * max)
+function generateRandomNumber(max, min){
+    return Math.floor(Math.random() * ((max - min) + 1) + min);
 }
 
 //FUNZIONE CHE SI ATTIVERà DOPO UN TOT DI TEMPO
@@ -21,22 +21,20 @@ let array_user = []
 //ciclo per 5 volte la funzione che genera numeri randomici
 for(let i=0 ; i<5 ; i++) {
     
-    //Definisco il range dei numeri da generare
-    let max = 20 ;
     
     //Chiamo la funzione che genera numeri random
-    let number = generateRandomNumber(max);
+    let number = generateRandomNumber(1,20);
     
     //controllo che i numeri generati non si ripetano
     while(array_random.includes(number)){
-        number = generateRandomNumber(max);
+        number = generateRandomNumber(1,20);
     }
     
     //inserisco i numeri random nell'array
     array_random.push(number);
     
 }
-
+console.log(array_random)
 //stampo i numeri random a video
 let tag_numbers = document.getElementById("pc-number")
 tag_numbers.innerHTML = array_random  ;
